@@ -1,9 +1,3 @@
-# TODO: 1. Print Report
-# TODO: 2. Check resources sufficient?
-# TODO: 3. Process coins
-# TODO: 4. Check transaction successful?
-# TODO: 5. Make coffee
-
 
 MENU = {
     "espresso": {
@@ -37,6 +31,19 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+
+
+# TODO : 2. Turn off the Coffee Machine by entering “ off ” to the prompt.
+    #a. For maintainers of the coffee machine, they can use “off” as the secret word to turn off
+    #the machine. Your code should end execution when this happens.
+# TODO: 3. Print Report
+# TODO: 4. Check resources sufficient?
+# TODO: 5. Process coins
+# TODO: 6. Check transaction successful?
+# TODO: 7. Make coffee
+
+
 
 
 def is_resource_sufficient(order_ingredients):
@@ -77,7 +84,12 @@ def make_coffee(drink_name, order_ingredients):
         resources[item] -= order_ingredients[item]
     print(f"Here is your {drink_name} ☕️. Enjoy!")
 
-
+# TODO: 1. Prompt user by asking “ What would you like? (espresso/latte/cappuccino): ”
+'''
+    #a. Check the user’s input to decide what to do next.
+    #b. The prompt should show every time action has completed, e.g. once the drink is
+    #dispensed. The prompt should show again to serve the next customer.
+'''
 is_on = True
 
 while is_on:
